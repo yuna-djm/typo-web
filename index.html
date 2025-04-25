@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HONGLOG</title>
+    <style>
+      body {
+        font-family: "Noto Sans KR";
+        background-color: #f7f7f7;
+        margin-left: 100px;
+        margin-right: 0;
+        font-weight: 300;
+      }
+      #log {
+        line-height: 1.5;
+      }
+      #typo-1,
+      #typo-2,
+      #typo-3,
+      #typo-4,
+      #typo-5,
+      #typo-6,
+      #typo-7,
+      #typo-8 {
+        width: 300px;
+        background-color: #e5e5e5;
+        padding-top: 0px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-bottom: 10px;
+        border-radius: 0px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 노트북 기준 8열 */
+        column-gap: 10px;
+        row-gap: 80px;
+        align-items: start;
+        grid-auto-flow: dense;
+      }
+      .cover {
+        max-width: 5000px;
+        border-bottom: 1px black solid;
+        align-items: center;
+        padding: 10px;
+        padding-bottom: 3px;
+        margin: 0;
+      }
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 14pt;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      .blue-footer {
+        display: block;
+        width: 100vw;
+        height: 200px;
+        margin-top: 60px;
+        background-color: #2343ff;
+        text-align: center;
+        left: -100px;
+      }
+      .article {
+        font-size: 13pt;
+        line-height: 1.7;
+        hyphens: auto;
+        word-wrap: break-word;
+      }
+
+      @media (max-width: 1300px) {
+        #grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (max-width: 1000px) {
+        #grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+    <script src="../p5.min.js"></script>
+    <!-- <script src="../addons/p5.sound.js"></script> -->
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+    <div class="cover">
+      <a href="index.html"><p style="max-width: 2500px; font-size: 11px; margin-bottom: 10px">홍로그 HONGLOG</p></a>
+      <!--<div id="canvas-holder"></div>-->
+    </div>
+    <div id="log">
+      <p style="font-size: 25pt; font-weight: 300; padding-left: 10px">
+        캠퍼스 경험과 조언이 담긴<br />
+        일상적이고 실용적인 글 모음집<br />
+      </p>
+    </div>
+    <p style="font-size: 12px; margin-top: 50px; margin-top: 15px; margin-bottom: 7px; padding-left: 10px">new post</p>
+    <div id="grid">
+      <div id="typo-1">
+        <a href="typo-1.html">
+          <h3>홍문관 엘리베이터 기다림이<br />즐겁지 않은 이유</h3></a
+        >
+        <p class="article">
+          <a href="typo-1.html">
+            엘리베이터 앞에서의 기다림은 유독 즐겁지 않다. 이곳에는 총 6대의 엘리베이터가 홀수층, 짝수층, 전층 운영 으로
+            나뉘어 두 대씩 존재한다. 수업 시작 시간 20분 전부터 홍문관 로비는 엘리베이터를 기다리는 사람들로 북적인다.
+            사람들이 몰려드는 시간에는 엘리베이터 줄이 길어져 마지못해 계단을 오르는 이들도 있으나, 목적지가 5층
+            이상이라면 추천하지 않는다. 홍문관 로비는 층고가 높은 B1층으로, 사실상 2층이기 때문이다. 만약 로비에서
+            7층까지 계단으로 걸어 올라간다고 가정하면 사실상 9층을 올라가는 것과 다름 없다는 사실을 잊지 말아야 한다.
+            따라서 당신이 홍문관 고층에서 수업을 듣는 새내기라면…
+          </a>
+        </p>
+        <p style="font-size: 10px; text-align: right">by 어도비의 노예</p>
+      </div>
+      <div id="typo-2">
+        <a href="typo-2.html"><h3>마감, 마감, 마감, 마감.</h3></a>
+        <a href="typo-2.html"
+          ><p class="article">
+            “글을 잘 쓰는 비법은 바로 ‘마감’에 있습니다.” 1학년 시절 논사글 수업에서 교수님께서 해주신 말씀이 기억에
+            남는다. 우리가 글을 쓰는 이유는 마감 기한이 있기 때문이고, 마감날이 다가올 수록 우리의 글쓰기 능력은
+            향상된다. — 라고 말씀하셨다. 나는 이 말에 지극히 공감할 수 밖에 없었다. 새내기 시절 나는 과제도, 발표도 모든
+            게 처음이라 과제 하나하나가 부담이고 두려움이었다. 그러나 마감 전날이 되면 그 부담과 두려움도 이상하게
+            잊혀졌다. ‘왜 이제서야 시작했지’ 싶은 후회가 밀려오기도 하지만 그럼에도 또 다음 마감이 오면 똑같이 반복한다.
+            결국 그런 순간에 오히려 집중도 잘 되고, 일이 술술 풀리기도…
+          </p></a
+        >
+        <p style="font-size: 10px; text-align: right">by 어도비의 노예</p>
+      </div>
+      <div id="typo-3">
+        <a href="typo-4.html"><h3>시디과가 수강신청 잘 하는 법</h3></a>
+        <a href="typo-4.html"
+          ><p class="article">
+            일단 수강신청 연습 페이지인 홍익소리라는 사이트가 있고요. 꼭 들어가서 수강신청 전에 연습해보시길 바랍니다.
+            해봤자 소용없을 거 같아도 의외로 도움이 많이 됩니다. 1학년 때 연습 안하고 잡으니 2개 잡혔고 2학년때 과거의
+            실수를 딛고 맹연습 후 4개 정도 잡게 되었습니다, 장족의 발전이지요. 모의신청도 있으니 적극 활용해 보세요,
+            놓치자 마다 과목별 수강신청 들어가서 전필부터 담으세요. 좀 있으면 남은 과목도 사람들이 다 주워가거든요. 학점
+            떼우고 싶을 땐 양심이 없는거 같아도 잘 할 수 있을 과목을 꼭 고릅니다. 괜히 도전해 봤다가 망할바엔 그게
+            낫습니다.
+          </p></a
+        >
+        <p style="font-size: 10px; text-align: right">by 밥버거</p>
+      </div>
+      <div id="typo-4">
+        <a href="typo-7.html"><h3>프실은 너무 어려워…</h3></a>
+        <a href="typo-7.html"
+          ><p class="article">
+            프린터실(이하 프실)에 처음 간 날은 숨이 턱 막히던 순간이었다. 복합기 세 대를 두고 자리싸움을 하는 사람들과
+            칼질을 이리저리 하며 종이 쪼가리를 날리는 사람들. 거기에 거대한 프린터 기계들은 나를 압도한다. 프실 카드를
+            기계 안에 넣는다. 작동하지 않는다. 분명, 분명 과사무실에서 천 원이나 주고 산 것이란 말이다. 그러나 에러라는
+            빨간 글씨로 나의 작업을 가로 막는다. 알고 보니 깊숙이 넣지 않은 채 혼자서 화만 냈던 것이다. 분명 여유로운
+            날이었다면, 선배들이 도와줄 수 있지 않았을까… 괜히 복합기에게 미안해지는 날이었다. 혹여나 이걸 읽고 공감이
+            되지 않는다면, 나만 특이했던 것이다. 여러분은 분명 나보다 나은 새내기 활동을 하고 있다…
+          </p></a
+        >
+        <p style="font-size: 10px; text-align: right">by 익명의 프린터기</p>
+      </div>
+      <div id="typo-5">
+        <a href="typo-5.html"><h3>현명한 드랍의 요건</h3></a>
+        <a href="typo-5.html"
+          ><p class="article">
+            안녕하세요 이번 학기에 수업 하나를 자체적으로 수강 포기한 2학년 시디과 선배입니다! 여러분 수강신청 기간도
+            중요하지만 수강신청 정정/ 철회기간도 정말 정말 중요합니다… 마지막 기회에요… 제가 하고 싶은 말은 수업이
+            본인에게 맞을지 꼭 잘 생각해보셔야 한다는 겁니다. 저는 이번 학기에 과제량이 많아 빡세기로 유명한 전공 수업을
+            하나 듣게 되었는데, 과제가 많으면 그만큼 실력이 빨리 늘겠지’하고 안일하게 생각했습니다. 게다가 이번학기가
+            시작되기 전 겨울방학 때 에프터이펙트의 기초를 미리 공부했었고 이 수업 또한 에프터이펙트를 다루는
+            수업이었기에 별로 걱정하지 않았었습니다. 하지만…
+          </p></a
+        >
+        <p style="font-size: 10px; text-align: right">by 학점증발대학생</p>
+      </div>
+      <!--
+      <div id="typo-6">
+        <a href="typo-6"><h3>C동 카페나무 메뉴 추천</h3></a>
+        <a href="typo-6"
+          ><p class="article">
+            평소에 C동 카페나무를 자주 이용하는 사람으로서 맛있는 메뉴 추천해드리겠습니다! (가격은 고려하지 않았습니다!/
+            쇼케이스에 진열돼있는 메뉴들 중에서만 선정했어요.) 첫 번째로 치아바타 입니다. 정확히는 치아바타 빵을 사용한
+            샌드위치인데 총 세 가지 맛이 있어요! 셋 다 맛있고 저는 개인적으로 머쉬룸 치킨이 가장 맛있었습니다. 두 번째로
+            딸바라떼입니다. 일회용 컵 안에 딸기랑 바나나가 들어있고 그걸 카운터로 가져가시면 직접 갈아서 만들어주십니다.
+            건강한 이미지를 위한 의도인지 뭔지는 모르겠지만 컵 안에 딸기와 바나나가 들어있는 걸 직접 본 후에 그게
+            갈아져서 나오니까 되게 건강한 걸 마시는 느낌이 납니다…
+          </p></a
+        >
+        <p style="font-size: 9px; text-align: right">by 저속노화를 챙기고 학점을 잃은 대학생</p>
+      </div>
+      <div id="typo-7">
+        <a href="typo-7"><h3>시디과가 수강신청 잘 하는 법</h3></a>
+        <a href="typo-7"
+          ><p class="article">
+            일단 수강신청 연습 페이지인 홍익소리라는 사이트가 있고요. 꼭 들어가서 수강신청 전에 연습해보시길 바랍니다.
+            해봤자 소용없을 거 같아도 의외로 도움이 많이 됩니다. 1학년 때 연습 안하고 잡으니 2개 잡혔고 2학년때 과거의
+            실수를 딛고 맹연습 후 4개 정도 잡게 되었습니다, 장족의 발전이지요. 모의신청도 있으니 적극 활용해 보세요,
+            놓치자 마다 과목별 수강신청 들어가서 전필부터 담으세요. 좀 있으면 남은 과목도 사람들이 다 주워가거든요. 학점
+            떼우고 싶을 땐 양심이 없는거 같아도 잘 할 수 있을 과목을 꼭 고릅니다. 괜히 도전해 봤다가 망할바엔 그게
+            낫습니다.
+          </p></a
+        >
+        <p style="font-size: 10px; text-align: right">by 밥버거</p>
+      </div>
+      <div id="typo-8">
+        <a href="typo-8"><h3>저는 모든 걸 알고 있어요.</h3></a>
+        <a href="typo-8"
+          ><p class="article">
+            자칭 디자인과라고 했지만, 그때 당시에는 디자이너가 되고 싶지 않았다. 자기소개를 하는 시간에 다들 자신의
+            부족한 작업물을 보여주며 어떤 분야로 진출하고 싶다는 의사를 내비쳤는데, 나는 이렇게 말했다. “디자이너가 되고
+            싶지 않습니다”. 미친 짓이었다. 디자이너를 배출하려는 과에서 디자이너가 되고 싶지 않다고 말했으니… 그렇다고
+            아무런 작업을 하지 않거나 회피하지도 않았다. 등록금 때문이거나 장학금 때문이 전연 아니었다. 정말 남들에게
+            무시를 당하고 싶지 않았다. 나의 실수와 부족함이 들통 나서 민망한 상황 속에 던져지고 싶지 않았다. 그래서
+            모르는 건 안다고, 기초적인 건 당연히 안다고 자부했다…
+          </p></a
+        >
+        <p style="font-size: 10px; text-align: right">by 익명의 프린터기</p>
+      </div>
+      -->
+    </div>
+    <!--<footer class="blue-footer"></footer>-->
+  </body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    font-family: "Noto Sans KR";
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 30px;
+}
+.grid {
+    margin: 100px auto;
+    padding: 30px;
+    font-weight: 400;
+}
+p {
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+}
+#title {
+    font-size: 17pt;
+    font-weight: 500;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    /*text-align: center;*/
+}
+.title {
+    width: 770px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.article {
+    width: 770px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+a {
+    color: black;
+        text-decoration: none;
+}
